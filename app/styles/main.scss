@@ -1,0 +1,72 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#quotation {
+  background-color: tomato;
+  padding: 0px 15px;
+  border: 2px solid black;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#author {
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  z-index: 1;
+  background-color: white;
+  border: 2px dotted black;
+  padding: 2px;
+}
+
+#quotationTitle {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  background-color: limegreen;
+  border: 2px solid black;
+  padding: 2px;
+  font-size: 16px;
+  /*transform: translateX(-50%);*/
+}
+
+#quotationText {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  #quotationText, #author {
+    font-size: 20px;
+  }
+
+  #quotationTitle {
+    font-size: 24px;
+  }
+
+  #quotationText {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
